@@ -1,7 +1,6 @@
 pipeline{
-    agent none
+    agent 'node1'
     stages {
-        agent { label 'node1' }
         stage("Ansible-deploy"){
             steps{
 			   echo 'Ansibleplaybook'
