@@ -4,7 +4,7 @@ pipeline{
         stage("Ansible-deploy"){
             steps{
 			   echo 'Ansibleplaybook'
-			   sh 'cd ansible'
+			   sh 'cd /ansible'
 			   sh 'ansible-playbook tom.yml'
             }
         }
