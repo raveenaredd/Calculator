@@ -5,7 +5,6 @@ pipeline{
             steps{
 			   echo 'Ansibleplaybook'
 			   sh 'pwd'
-			   sh 'cd ansible'
 			   sh 'ansible-playbook tom.yml'
             }
         }
